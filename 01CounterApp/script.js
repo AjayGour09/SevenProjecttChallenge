@@ -1,4 +1,4 @@
-const Count = document.getElementById('Count')
+const Count = document.getElementById('Count') 
 const increment =document.getElementById('increment')
 const decrement = document.getElementById('decrement')
 const reset = document.getElementById('reset')
@@ -6,7 +6,7 @@ const reset = document.getElementById('reset')
 let count = parseInt(localStorage.getItem('count')) || 0;;
 function updatedisplay(){
     Count.innerText = count;
-    localStorage.setItem('count',count);
+    localStorage.setItem('count', count);
 }
 
 increment.addEventListener('click' , ()=>{
