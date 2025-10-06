@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+#MainContainer {
+  width: 100%;
+  height: 60px;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 28px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Page Title */
+h1 {
+  text-align: center;
+  margin: 40px 0 20px 0;
+  font-size: 24px;
+  color: #333;
+}
+
+/* Input + Add Button */
+.ChildContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 350px;
+  height: 45px;
+  padding: 0 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+button#addTask {
+  width: 100px;
+  height: 45px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button#addTask:hover {
+  background-color: #0056b3;
+}
+
+/* Task List */
+#tasklist {
+  max-width: 500px;
+  margin: 0 auto 50px auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Each Task Item */
+#tasklist li {
+  background: #f9f9f9;
+  padding: 12px 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  transition: 0.2s;
+}
+
+#tasklist li:hover {
+  background: #f1f1f1;
+}
+
+/* Task Text */
+#tasklist li span {
+  font-size: 20px;       /* font bada */
+  font-weight: 500;
+  flex: 1;   /* gap text aur buttons ke beech */
+}
+
+/* Task Buttons */
+#tasklist li button {
+  margin-left: 5px;      /* buttons ke beech chhota gap */
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+/* Edit Button */
+#tasklist li button.edit {
+  background-color: #28a745;
+  color: white;
+}
+
+/* Delete Button */
+#tasklist li button.delete {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Hover effect for buttons */
+#tasklist li button:hover {
+  opacity: 0.8;
+}
+
+/* Completed Task */
+.completed {
+  text-decoration: line-through;
+  color: gray;
+  opacity: 0.7;
+}
