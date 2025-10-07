@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="Container">
+        <h1>Customize your password</h1>
+        <div class="pass">
+            <p></p>
+            <label for="lengthRange">Password Length:
+                <span id="lengthValue"> 8</span>
+            </label>
+            <input type="range" id="lengthRange" min="4" value="8" max="25" step="1">
+        </div>
+        <div class="output-box">
+        <input type="text" id="passwordOutput" placeholder="Your secure password..." readonly>
+        <button id="generateBtn">Generate Password</button>
+        </div>
+
+        <div class="Character">
+            <label for="easy"> <input type="checkbox" id="easy">Easy to say</label>
+            <label for="read"> <input type="checkbox" id="read">Easy to read</label>
+            <label for="Characters"> <input type="checkbox" id="character">All character</label>
+        </div>
+        <div class="cases">
+            <label><input type="checkbox" id="Uppercase">Uppercase</label>
+            <label><input type="checkbox" id="Lowercase">Lowercase</label>
+            <label><input type="checkbox" id="Numbers">Numbers</label>
+            <label><input type="checkbox" id="Symbols">Symbols</label>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

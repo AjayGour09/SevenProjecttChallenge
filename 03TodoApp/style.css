@@ -1,12 +1,10 @@
-/* Reset */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-
-/* Header */
 #MainContainer {
   width: 100%;
   height: 60px;
@@ -19,16 +17,12 @@
   font-weight: 600;
   box-shadow: 0 2px 6px rgba(0,0,0,0.2);
 }
-
-/* Page Title */
 h1 {
   text-align: center;
   margin: 40px 0 20px 0;
   font-size: 24px;
   color: #333;
 }
-
-/* Input + Add Button */
 .ChildContainer {
   display: flex;
   justify-content: center;
@@ -66,8 +60,6 @@ button#addTask {
 button#addTask:hover {
   background-color: #0056b3;
 }
-
-/* Task List */
 #tasklist {
   max-width: 500px;
   margin: 0 auto 50px auto;
@@ -77,8 +69,6 @@ button#addTask:hover {
   flex-direction: column;
   gap: 10px;
 }
-
-/* Each Task Item */
 #tasklist li {
   background: #f9f9f9;
   padding: 12px 15px;
@@ -94,16 +84,14 @@ button#addTask:hover {
   background: #f1f1f1;
 }
 
-/* Task Text */
 #tasklist li span {
-  font-size: 20px;       /* font bada */
+  font-size: 20px;       
   font-weight: 500;
-  flex: 1;   /* gap text aur buttons ke beech */
+  flex: 1;   
 }
 
-/* Task Buttons */
 #tasklist li button {
-  margin-left: 5px;      /* buttons ke beech chhota gap */
+  margin-left: 5px;      
   padding: 6px 12px;
   border: none;
   border-radius: 6px;
@@ -112,24 +100,18 @@ button#addTask:hover {
   transition: 0.3s;
 }
 
-/* Edit Button */
 #tasklist li button.edit {
   background-color: #28a745;
   color: white;
 }
-
-/* Delete Button */
 #tasklist li button.delete {
   background-color: #dc3545;
   color: white;
 }
-
-/* Hover effect for buttons */
 #tasklist li button:hover {
   opacity: 0.8;
 }
 
-/* Completed Task */
 .completed {
   text-decoration: line-through;
   color: gray;
